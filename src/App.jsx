@@ -7,7 +7,6 @@ import bootstrap from 'bootstrap';
 export default function App() {
   return (
     <>
-    
     <NavBar />
     <ItemListContainer greeting="Hello!" />
     </>
