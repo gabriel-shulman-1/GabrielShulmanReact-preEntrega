@@ -28,7 +28,7 @@
   color: #61dafb;
 }
 
-header{
+/*header{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -44,13 +44,13 @@ header{
   border-radius: 0.5rem;
 }
 
-a{
+/*a{
   background-color: #1c92f9;
   margin: 1rem;
   width: auto;
   padding: 0.5rem;
   border-radius: 0.6rem;
-}
+}*/
 
 #greeting{
   text-align: center;

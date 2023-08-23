@@ -1,0 +1,32 @@
+props
+    modifico el interior de un componente
+
+    implantacion de props
+
+    export const ItemListContainer = (props) => {
+    return <div id="greeting" class="fw-bold">{props.greeting}</div>};
+
+    como se modifica
+
+    <ItemListContainer greeting="Hello!" />
+
+hooks
+    para usarla hay q importar:
+        import { useState } from "react"
+    empiezan con "useNombreDeFuncion"
+
+    const [mostrarTabla,setMostrarTabla]                = useState(valor)
+                 estado,funcion q actualiza el estado   
+
+    /*  setMostrarTabla establece el valor
+        mostrarTabla fija el estado en el componente*/
+
+    const botonAbierto = () => setMostrarTabla(true) //establece como true
+    const botonCerrado = () => setMostrarTabla(false) //establece como false
+
+    mostrarTabla && (Tabla <elemento>)
+    esto responde a como fijemos setMostrarTabla.
+
+
+
+
