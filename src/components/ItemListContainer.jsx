@@ -11,6 +11,12 @@ export function ItemListContainer(props){
             promise.then((data)=> setProducts(data))
         },[])
 
+        if(!products) {
+            return(
+                <h2>Loading...</h2>
+            )
+        }
+
     return (
         <>
             <div id="greeting" className="fw-bold">{props.greeting}</div>
