@@ -10,9 +10,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 export default function App() {
   return (
     <>
-    <NavBar />
-    {/*<ItemListContainer greeting="Hello!" />*/}
-    <ItemDetailContainer greeting="Hello!"/>
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route path='/' element={<ItemListContainer greeting="Hello!" />}/>
+        <Route path='/category/:id' element={<ItemListContainer greeting="Hello!" />}/>
+        <Route path='/item/:id' element={<ItemDetailContainer/>}/>
+      </Routes>
+      </BrowserRouter>
     </>
   )
 }

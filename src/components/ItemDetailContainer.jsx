@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { ItemCount } from "./ItemCount";
 import data from "../data/products.json";
+import { ItemDetail } from "./ItemDetail";
 
 export function ItemDetailContainer(props){
 
@@ -19,15 +20,7 @@ export function ItemDetailContainer(props){
 
     return (
         <>
-            <div id="greeting" className="fw-bold">{props.greeting}</div>
-            <div className="itemContainer">
-                <div className="productCard" key={product.id}>
-                    <h3>{product.name}</h3>
-                    <p>Cantidad : {product.qty}</p>
-                    <p>Precio : {product.price} U$</p>
-                    <ItemCount/>
-                </div>
-            </div>
+            <ItemDetail product={product}/>
         </>
     )
 };
