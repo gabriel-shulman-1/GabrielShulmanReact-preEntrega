@@ -1,50 +1,86 @@
 [
     {
-        "categoria": "a",
-        "tipo": "a",
-        "product": "a",
-        "name": "a",
-        "qty": 0,
-        "price": 0
+        "id": 1,
+        "categoria": "hardware",
+        "name": "Card Video",
+        "qty": 10,
+        "price": 1000
     },
     {
-        "categoria": "a",
-        "tipo": "a",
-        "product": "a",
-        "name": "a",
-        "qty": 0,
-        "price": 0
+        "id": 2,
+        "categoria": "hardware",
+        "name": "SSD 1TB",
+        "qty": 40,
+        "price": 500
     },
     {
-        "categoria": "a",
-        "tipo": "a",
-        "product": "a",
-        "name": "a",
-        "qty": 0,
-        "price": 0
+        "id": 3,
+        "categoria": "hardware",
+        "name": "Motherboard",
+        "qty": 20,
+        "price": 600
     },
     {
-        "categoria": "a",
-        "tipo": "a",
-        "product": "a",
-        "name": "a",
-        "qty": 0,
-        "price": 0
+        "id": 4,
+        "categoria": "hardware",
+        "name": "Microprocessor",
+        "qty": 20,
+        "price": 1000
     },
     {
-        "categoria": "a",
-        "tipo": "a",
-        "product": "a",
-        "name": "a",
-        "qty": 0,
-        "price": 0
+        "id": 5,
+        "categoria": "software",
+        "name": "Licencia Windows 11",
+        "qty": 50,
+        "price": 5
     },
     {
-        "categoria": "a",
-        "tipo": "a",
-        "product": "a",
-        "name": "a",
-        "qty": 0,
-        "price": 0
+        "id": 6,
+        "categoria": "software",
+        "name": "Microsoft office 2022",
+        "qty": 60,
+        "price": 20
+    },
+    {
+        "id": 7,
+        "categoria": "software",
+        "name": "AVG Antivirus",
+        "qty": 40,
+        "price": 20
+    },
+    {
+        "id": 8,
+        "categoria": "software",
+        "name": "Age of Empires 2, Definitive edition",
+        "qty": 50,
+        "price": 20
+    },
+    {
+        "id": 9,
+        "categoria": "accessories",
+        "name": "Mouse Gamer",
+        "qty": 70,
+        "price": 400
+    },
+    {
+        "id": 10,
+        "categoria": "accessories",
+        "name": "Keyboard gamer",
+        "qty": 70,
+        "price": 200
+    },
+    {
+        "id": 11,
+        "categoria": "accessories",
+        "name": "Monitor curve 22´",
+        "qty": 20,
+        "price": 250
+    },
+    {
+        "id": 12,
+        "categoria": "accessories",
+        "name": "Headphones",
+        "qty": 90,
+        "price": 350
     }
 ]
