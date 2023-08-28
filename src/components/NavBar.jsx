@@ -3,9 +3,6 @@ import pc from "../components/assets/pc.png"
 import bootstrap from "bootstrap/dist/css/bootstrap.min.css";
 
 export const NavBar = () => {
-
-
-
     return (
     <header>
         <img src={pc}></img>
