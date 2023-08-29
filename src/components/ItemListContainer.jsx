@@ -10,24 +10,25 @@ export function ItemListContainer(props){
     console.log(id)
     useEffect(()=> {
         const promise = new Promise((resolve,reject)=>
-            {setTimeout(()=>resolve(data),2000)})
 
-            promise.then((data)=> 
-                {if (!id){
-                    setProducts(data)  
-                } else {
-                    const productsFiltered = data.filter(
+        {setTimeout(()=>resolve(data),2000)})
+        
+        promise.then((data)=> 
+        {if (!id){
+            setProducts(data)  
+        } else {
+            const productsFiltered = data.filter(
                     (product) => product.category===id
-                )
-                setProducts(productsFiltered)
+                    )
+                    setProducts(productsFiltered)
                 }})
-        },[])
-
-        if(!products) {
-            return(
-                <h2>Loading...</h2>
-            )
-        }
+            },[])
+            
+            if(!products) {
+                return(
+                    <h2>Loading...</h2>
+                )
+            }
 
     return (
         <>

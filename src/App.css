@@ -38,7 +38,7 @@ header{
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: #960000;
+  background-image: radial-gradient(rgb(0, 4, 255) 5%, transparent 95%);
 }
 
 .navbar{
@@ -74,6 +74,7 @@ a{
   margin-left: auto;
   margin-right: auto;
   height: max-content;
+  padding-bottom: 20%;
 }
 
 .productCard{
@@ -131,7 +132,7 @@ a{
 
 .navBar .buttonNavBar{
   transition: 0.5s;
-  background-color: blue;
+  background-color: rgb(132, 0, 255);
   width: 6rem;
   text-align: center;
   color: white;
