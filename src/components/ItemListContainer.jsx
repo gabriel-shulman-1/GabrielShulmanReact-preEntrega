@@ -7,28 +7,24 @@ export function ItemListContainer(props){
 
     const [products,setProducts] = useState([])
     const {id} = useParams()
-    console.log(id)
+    
     useEffect(()=> {
         const promise = new Promise((resolve,reject)=>
-
+        
         {setTimeout(()=>resolve(data),2000)})
         
         promise.then((data)=> 
         {if (!id){
-            setProducts(data)  
-        } else {
-            const productsFiltered = data.filter(
+                setProducts(data)  
+            } else {
+                const productsFiltered = data.filter(
                     (product) => product.category===id
                     )
                     setProducts(productsFiltered)
-                }})
-            },[])
+                    }})
+                },[])
             
-            if(!products) {
-                return(
-                    <h2>Loading...</h2>
-                )
-            }
+                if(products.length === 0) {return(<h2 className="loading">Loading...</h2>)}
 
     return (
         <>
