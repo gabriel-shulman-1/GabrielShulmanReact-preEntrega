@@ -96,7 +96,6 @@ a{
     border-radius: 1rem;
 }
 
-
 .itemCount{
   display: flex;
   flex-direction: row;
@@ -152,6 +151,10 @@ p{
 }
 
 span{
+  color: white;
+}
+
+.loading{
   color: white;
 }
 
