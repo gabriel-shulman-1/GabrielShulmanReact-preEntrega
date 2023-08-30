@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { ItemCount } from "./ItemCount";
 import data from "../data/products.json";
 import { useParams } from "react-router-dom";
+import { ItemDetail } from "./ItemDetail";
 
 export function ItemListContainer(props){
 
@@ -22,7 +23,7 @@ export function ItemListContainer(props){
                     )
                     setProducts(productsFiltered)
                     }})
-                },[])
+                },[id])
             
                 if(products.length === 0) {return(<h2 className="loading">Loading...</h2>)}
 
@@ -30,16 +31,7 @@ export function ItemListContainer(props){
         <>
             <div id="greeting" className="fw-bold">{props.greeting}</div>
             <div className="listContainer">
-                {products.map(product => (
-                        <div className="productCard" key={product.id}>
-                            <h3>{product.name}</h3>
-                            <p>Cantidad : {product.qty}</p>
-                            <p>Precio : {product.price} U$</p>
-                            <ItemCount/>
-                        </div>
-                        )
-                    )
-                }
+                <ItemDetail products={products}/>
             </div>
         </>
     )
