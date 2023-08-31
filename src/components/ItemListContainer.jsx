@@ -24,12 +24,7 @@ export function ItemListContainer(props){
                     setProducts(productsFiltered)
                     }})
                 },[id])
-            
-            if(!products) {
-                return(
-                    <h2>Loading...</h2>
-                )
-            }
+            if(products.length === 0) {return(<h2 className="loading">Loading...</h2>)}
 
     return (
         <>
