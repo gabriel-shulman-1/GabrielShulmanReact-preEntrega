@@ -25,12 +25,26 @@ export function ItemListContainer(props){
                     }})
                 },[id])
             
-                if(products.length === 0) {return(<h2 className="loading">Loading...</h2>)}
+            if(!products) {
+                return(
+                    <h2>Loading...</h2>
+                )
+            }
+
     return (
         <>
             <div id="greeting" className="fw-bold">{props.greeting}</div>
             <div className="listContainer">
-                {products.map(product => (<ItemDetail productos={product}/>))}
+                {products.map(product => (
+                        <div className="productCard" key={product.id}>
+                            <h3>{product.name}</h3>
+                            <p>Cantidad : {product.qty}</p>
+                            <p>Precio : {product.price} U$</p>
+                            <ItemCount/>
+                        </div>
+                        )
+                    )
+                }
             </div>
         </>
     )
