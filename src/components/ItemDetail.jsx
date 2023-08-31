@@ -1,17 +1,17 @@
 import { ItemCount } from "./ItemCount"
 import { ItemDetailContainer } from "./ItemDetailContainer"
+import { ItemListContainer } from "./ItemListContainer"
 
-export  const ItemDetail = ({product}) => {
-    console.log(product)
-    return(<>
-            <div className="itemContainer">
-                <div className="productCard" key={product.id}>
-                <h3>{product.name}</h3>
-                <p>Cantidad : {product.qty}</p>
-                <p>Precio : {product.price} U$</p>
+export  const ItemDetail = ({productos}) => {
+    const producto = {productos}.productos
+    return(
+        <>
+            <div className="productCard" key={producto.id}>
+                <h3>{producto.name}</h3>
+                <p>Categoria : {producto.category}</p>
+                <p>Cantidad : {producto.qty}</p>
                 <ItemCount/>
-                </div>
             </div>
         </>
-        )
-}
+)}
+    
