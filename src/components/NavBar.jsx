@@ -10,10 +10,10 @@ export const NavBar = () => {
     <header>
         <img src={pc}></img>
         <nav className="navBar">
-            <link className="buttonNavBar" href="/">Home</link>
-            <link className="buttonNavBar" href="/category/hardware">Hardware</link>
-            <link className="buttonNavBar" href="/category/software">Software</link>
-            <link className="buttonNavBar" href="/category/accessories">Accesorios</link>
+            <Link className="buttonNavBar" to="/">Home</Link>
+            <Link className="buttonNavBar" to="/category/hardware">Hardware</Link>
+            <Link className="buttonNavBar" to="/category/software">Software</Link>
+            <Link className="buttonNavBar" to="/category/accessories">Accesorios</Link>
         </nav>
         <img src={carrito}></img>
     </header>
