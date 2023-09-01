@@ -3,6 +3,8 @@
         "id": "1",
         "category": "hardware",
         "name": "Card Video",
+        "description":"Placa de video gamer para que tus juegos se vean mejor que nunca",
+        "image":"./assets/placaDeVideo.jpg",
         "qty": 10,
         "price": 1000
     },
@@ -10,6 +12,8 @@
         "id": "2",
         "category": "hardware",
         "name": "SSD 1TB",
+        "description":"Disco solido de 1TB para guardar todas tus cosas y acceder mas rapido",
+        "image":"./assets/SSD.jpg",
         "qty": 40,
         "price": 500
     },
@@ -17,6 +21,8 @@
         "id": "3",
         "category": "hardware",
         "name": "Motherboard",
+        "description":"Base para empezar con tu PC gamer e instalar tus componentes!",
+        "image":"./assets/motherBoard.jpg",
         "qty": 20,
         "price": 600
     },
@@ -24,6 +30,8 @@
         "id": "4",
         "category": "hardware",
         "name": "Microprocessor",
+        "description":"Dale toda la velocidad de procesamiento con nuestros Microprocesadores",
+        "image":"./assets/microProccesor.jpg",
         "qty": 20,
         "price": 1000
     },
@@ -31,13 +39,17 @@
         "id": "5",
         "category": "software",
         "name": "Licencia Windows 11",
+        "description":"Con una licencia de Windows 11, pone al dia tu PC con todas las actualizaciones!",
+        "image":"./assets/licenciaWindows11.jpg",
         "qty": 50,
         "price": 5
     },
     {
         "id": "6",
         "category": "software",
-        "name": "Microsoft office 2022",
+        "name": "Microsoft Office 365",
+        "description":"Una licencia para tener tu propia estacion de trabajo optima!",
+        "image":"./assets/office365.jpg",
         "qty": 60,
         "price": 20
     },
@@ -45,6 +57,8 @@
         "id": "7",
         "category": "software",
         "name": "AVG Antivirus",
+        "description":"Mantene tu PC segura de ataques ciberneticos con un buen antivirus",
+        "image":"./assets/AVG.jpg",
         "qty": 40,
         "price": 20
     },
@@ -52,6 +66,8 @@
         "id": "8",
         "category": "software",
         "name": "Age of Empires 2, Definitive edition",
+        "description":"El mejor juego de estrategia al mejor precio en tu PC!",
+        "image":"./assets/ageOfEmpires2.jpg",
         "qty": 50,
         "price": 20
     },
@@ -59,6 +75,8 @@
         "id": "9",
         "category": "accessories",
         "name": "Mouse Gamer",
+        "description":"No podes jugar a tus juegos sin un buen mouse gamer!",
+        "image":"./assets/mouseGamer.jpg",
         "qty": 70,
         "price": 400
     },
@@ -66,6 +84,8 @@
         "id": "10",
         "category": "accessories",
         "name": "Keyboard gamer",
+        "description":"Ni tampoco podes jugar sin un buen teclado gamer!",
+        "image":"./assets/keyBoardGamer.jpg",
         "qty": 70,
         "price": 200
     },
@@ -73,6 +93,8 @@
         "id": "11",
         "category": "accessories",
         "name": "Monitor curve 22´",
+        "description":"Y disfruta de tu PC con unos buenos monitores curvos!",
+        "image":"./assets/monitorCurvo22.jpg",
         "qty": 20,
         "price": 250
     },
@@ -80,6 +102,8 @@
         "id": "12",
         "category": "accessories",
         "name": "Headphones",
+        "description":"Sumergite en otros mundos con unos buenos headphones!",
+        "image":"./assets/headPhoneGamer.jpg",
         "qty": 90,
         "price": 350
     }
