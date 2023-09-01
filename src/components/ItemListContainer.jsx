@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
-import { ItemCount } from "./ItemCount";
 import data from "../data/products.json";
 import { useParams } from "react-router-dom";
-import { ItemDetail } from "./ItemDetail";
+import { ItemList } from "./ItemList";
 
 export function ItemListContainer(props){
 
@@ -30,16 +29,7 @@ export function ItemListContainer(props){
         <>
             <div id="greeting" className="fw-bold">{props.greeting}</div>
             <div className="listContainer">
-                {products.map(product => (
-                        <div className="productCard" key={product.id}>
-                            <h3>{product.name}</h3>
-                            <p>Cantidad : {product.qty}</p>
-                            <p>Precio : {product.price} U$</p>
-                            <ItemCount/>
-                        </div>
-                        )
-                    )
-                }
+                <ItemList products={products}/>
             </div>
         </>
     )

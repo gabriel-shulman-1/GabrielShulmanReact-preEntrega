@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { ItemCount } from "./ItemCount";
 import data from "../data/products.json";
 import { ItemDetail } from "./ItemDetail";
 
@@ -14,11 +13,11 @@ export function ItemDetailContainer(props){
             promise.then(setShowLoading(false))
         },[])
 
-    if(product) {return(<h2 className="loading">Loading...</h2>)}
+    if(!product) {return(<h2 className="loading">Loading...</h2>)}
 
     return (
-        <>
+        <div key={product.id} className="productCardForId">
             {<ItemDetail product={product}/>}
-        </>
+        </div>
     )
 };

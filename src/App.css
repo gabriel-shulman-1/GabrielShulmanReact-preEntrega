@@ -49,14 +49,6 @@ header{
   border-radius: 0.5rem;
 }
 
-a{
-  background-color: #1c92f9;
-  margin: 1rem;
-  width: auto;
-  padding: 0.5rem;
-  border-radius: 0.6rem;
-}
-
 #greeting{
   text-align: center;
   box-sizing: border-box;
@@ -70,7 +62,7 @@ a{
   justify-content: space-between;
   gap: 2rem;
   padding: 2rem;
-  width: 70%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -79,12 +71,33 @@ a{
   display: flex;
     padding: 1rem;
     border-style: solid;
-    width: 30%;
+    width: 25%;
     flex-direction: column;
     align-items: center;
     border-radius: 1rem;
     background-color: rgb(0, 0, 0);
     border-color: rgb(255, 0, 255);
+}
+
+.productCard :hover{
+  animation-name: colorLink;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.productCardForId{
+    display: flex;
+    padding: 1rem;
+    border-style: solid;
+    width: 35%;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(255, 0, 255);
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .itemContainer{
@@ -146,9 +159,10 @@ p{
   color: white;
 }
 
-.productCard h3{
+.tituloProducto{
   color: white;
 }
+
 
 span{
   color: white;
@@ -156,6 +170,20 @@ span{
 
 .loading{
   color: white;
+}
+
+.linkProduct{
+  text-decoration: none;
+}
+
+
+@keyframes colorLink {
+  0% {background-color: white;}
+  20% {background-color: rgb(0, 248, 145);}
+  40% {background-color: rgb(0, 89, 255);}
+  60% {background-color: rgb(0, 38, 255);}
+  80% {background-color: rgb(89, 0, 255);}
+  100% {background-color: rgb(234, 0, 255);}
 }
 
 @keyframes App-logo-spin {

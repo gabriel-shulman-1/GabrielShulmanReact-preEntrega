@@ -1,7 +1,5 @@
-import { Button } from "bootstrap";
 import carrito from "../components/assets/carrito.png";
 import pc from "../components/assets/pc.png"
-import bootstrap from "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 
 export const NavBar = () => {

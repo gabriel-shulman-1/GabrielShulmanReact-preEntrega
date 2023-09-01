@@ -1,19 +1,15 @@
 import { ItemCount } from "./ItemCount"
-import { ItemDetailContainer } from "./ItemDetailContainer"
-import { ItemListContainer } from "./ItemListContainer"
 
-export  const ItemDetail = ({productos}) => {
-    const producto = {productos}.productos
+export  const ItemDetail = ({product}) => {
     return(
         <>
-            <div className="productCard" key={producto.id}>
-                <h3>{producto.name}</h3>
-                <p>Categoria : {producto.category}</p>
-                <img src={producto.image}/>
-                <p>{producto.description}</p>
-                <p>Cantidad : {producto.qty}</p>
-                <ItemCount/>
-            </div>
+            <h3 className="tituloProducto">{product.name}</h3>
+            <p>Categoria : {product.category}</p>
+            <img src={product.image}></img>
+            <p>{product.description}</p>
+            <p>Cantidad : {product.qty}</p>
+            <p>Precio : {product.price}U$</p>
+            <ItemCount/>
         </>
 )}
     
