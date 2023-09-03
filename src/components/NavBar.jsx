@@ -1,4 +1,4 @@
-import carrito from "../components/assets/carrito.png";
+import carrito from "../components/assets/carrito2.svg";
 import pc from "../components/assets/pc.png"
 import { Link } from "react-router-dom";
 
