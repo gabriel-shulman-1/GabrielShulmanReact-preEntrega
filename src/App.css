@@ -71,7 +71,7 @@ header{
 
 .buttonNavBar:hover{
   transition: 0.5s;
-  background-color: rgba(132, 0, 255, 0.527);
+  background-color: rgba(255, 136, 0, 0.63);
 }
 
 #greeting{
@@ -173,6 +173,7 @@ span{
 }
 
 .loading{
+  text-align: center;
   color: white;
 }
 
