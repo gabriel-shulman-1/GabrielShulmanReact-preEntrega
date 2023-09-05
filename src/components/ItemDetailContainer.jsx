@@ -22,8 +22,8 @@ export function ItemDetailContainer(props){
     if(!product) {return(<h2 className="loading">Loading...</h2>)}
 
     return (
-        <div key={product.id} className="productCardForId">
+        <main>
             {<ItemDetail product={product}/>}
-        </div>
+        </main>
     )
 };
