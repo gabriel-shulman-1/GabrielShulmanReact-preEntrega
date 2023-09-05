@@ -19,7 +19,7 @@ export function ItemDetailContainer(props){
             promise.then(setShowLoading(false))
         },[])
 
-    if(!product) {return(<h2 className="loading">Loading...</h2>)}
+    if(product==null) {return(<h2 className="loading">Loading...</h2>)}
 
     return (
         <div key={product.id} className="productCardForId">
