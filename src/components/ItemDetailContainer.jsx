@@ -5,7 +5,6 @@ import { useParams } from "react-router-dom";
 
 export function ItemDetailContainer(props){
     const [product,setProduct] = useState(null)
-    const [showLoading, setShowLoading] = useState(true)
     const {id} = useParams() 
 
     useEffect(()=> {
@@ -16,14 +15,13 @@ export function ItemDetailContainer(props){
             })
 
             promise.then((data)=> setProduct(data))
-            promise.then(setShowLoading(false))
         },[])
 
     if(product==null) {return(<h2 className="loading">Loading...</h2>)}
 
     return (
-        <div key={product.id} className="productCardForId">
+        <main>
             {<ItemDetail product={product}/>}
-        </div>
+        </main>
     )
 };

@@ -69,13 +69,14 @@ header{
   font-weight: bold;
   text-decoration: none;
   border-radius: 1rem;
-  width: 8rem;
-  height: 2rem;
+  width: 9rem;
+  height: 3rem;
+  font-size: x-large;
 }
 
 .buttonNavBar:hover{
   transition: 0.5s;
-  background-color: rgba(255, 136, 0, 0.63);
+  background-color: rgba(0, 255, 0, 0.63);
 }
 
 #greeting{
@@ -107,6 +108,7 @@ header{
     background-color: rgb(0, 0, 0);
     border-color: rgb(255, 0, 255);
     transition: 0.5s;
+    text-align: center;
 }
 
 .productCard:hover{
@@ -179,10 +181,15 @@ span{
 .loading{
   text-align: center;
   color: white;
+  margin: 1rem;
 }
 
 .linkProduct{
   text-decoration: none;
+}
+
+.rounded{
+  margin: 1rem;
 }
 
 @keyframes App-logo-spin {
