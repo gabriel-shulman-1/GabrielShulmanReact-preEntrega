@@ -3,6 +3,10 @@
   height: 100vw;
 }
 
+main{
+  background-color: black;
+}
+
 .App {
   text-align: center;
 }
