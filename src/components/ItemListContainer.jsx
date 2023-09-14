@@ -10,9 +10,7 @@ export function ItemListContainer(props){
     
     useEffect(()=> {
         const promise = new Promise((resolve,reject)=>
-        
         {setTimeout(()=>resolve(data),2000)})
-        
         promise.then((data)=> 
         {if (!id){
                 setProducts(data)  
@@ -24,7 +22,6 @@ export function ItemListContainer(props){
                     }})
                 },[id])
             if(products.length === 0) {return(<h2 className="loading">Loading...</h2>)}
-
     return (
         <main>
             <div id="greeting" className="fw-bold">{props.greeting}</div>

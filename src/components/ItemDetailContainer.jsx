@@ -15,7 +15,7 @@ export function ItemDetailContainer(props){
             })
 
             promise.then((data)=> setProduct(data))
-        },[])
+        },[id])
 
     if(product==null) {return(<h2 className="loading">Loading...</h2>)}
 
