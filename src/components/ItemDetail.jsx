@@ -1,4 +1,6 @@
 import { ItemCount } from "./ItemCount"
+import { useContext } from "react"
+import { CartContext } from "../context/CartContext"
 import h1 from "./assets/placaDeVideo.jpg"
 import h2 from "./assets/SSD.jpg"
 import h3 from "./assets/motherBoard.jpg"
@@ -15,6 +17,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export  const ItemDetail = ({product}) => {
     const images = [h1,h2,h3,h4,s1,s2,s3,s4,a1,a2,a3,a4]
+    const addItem = useContext(CartContext)
+    const onAdd = count => addItem(product,count)
+    
     return(
         <div key={product.id} className="productCardForId">
             <h3 className="tituloProducto">{product.name}</h3>
@@ -23,7 +28,7 @@ export  const ItemDetail = ({product}) => {
             <p>Categoria : {product.category}</p>
             <p>Cantidad : {product.qty}</p>
             <p>Precio : {product.price}U$</p>
-            <ItemCount/>
+            <ItemCount onAdd={onAdd} stock={product.qty}/>
         </div>
 )}
     
