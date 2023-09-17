@@ -4,7 +4,7 @@ import { useContext } from "react"
 import { CartContext } from "../context/CartContext"
 
 export const Item = ({product}) => {
-    const addItem = useContext(CartContext)
+    const {addItem} = useContext(CartContext)
     const onAdd = count => addItem(product,count)
 
     return (

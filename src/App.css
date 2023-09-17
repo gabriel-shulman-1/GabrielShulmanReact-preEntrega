@@ -192,6 +192,13 @@ span{
   margin: 1rem;
 }
 
+.inCart{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

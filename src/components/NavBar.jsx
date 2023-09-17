@@ -1,5 +1,5 @@
-import carrito from "../components/assets/carrito3.svg";
 import pc from "../components/assets/pc.png"
+import { CartWidget } from "./CartWidget";
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -14,7 +14,7 @@ export const NavBar = () => {
             <Link className="btn btn-primary" to="/category/software">Software</Link>
             <Link className="btn btn-primary" to="/category/accessories">Accesorios</Link>
         </nav>
-        <img src={carrito}></img>
+        <CartWidget/>
     </header>
     )
 }
