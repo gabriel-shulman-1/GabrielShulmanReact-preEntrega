@@ -3,6 +3,8 @@ import { CartContext } from "../context/CartContext"
 import carrito from "../components/assets/carrito3.svg";
 import { useEffect, useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from "react-router-dom";
+import { Cart } from "./Cart";
 
 export function CartWidget () {
     const [itemsInCart,SetItemsInCart] = useState()
@@ -17,9 +19,11 @@ export function CartWidget () {
     )
 
     return(
-        <div className="inCart">
-            <img src={carrito}></img>
-            <p>{itemsInCart}</p>
-        </div>
+        <Link to="/cart">
+            <div className="inCart">
+                <img src={carrito}></img>
+                <p>{itemsInCart}</p>
+            </div>
+        </Link>
     )
 }
