@@ -1,19 +1,38 @@
-import { createContext,useEffect,useState } from "react"
+import { createContext,useState } from "react"
 
 export const CartContext = createContext([])
 
 export function CartProvider ({children}){
     const [item, setItem ] = useState([])
-    const [ItemsCart,setItemsCart] = useState(0)
-    const addItem = (product,qty) =>setItem(prev => [...prev,{...product,qty}])
-    const itemsEnCarrito = item.reduce((act,val) => act + val.qty,0)
-    useEffect(()=>{
-        for (let index = 0; index < item.length; index++) {
-            setItemsCart(item[index].qty)
+
+    const addItem = (product,qty) =>{
+        const alreadyExists = item.some(item => item.id === product.id)
+        if(!alreadyExists) setItem(prev => [...prev,{...product,qty}])
+        else {
+            const actualizarProductos = item.map(
+                item => {
+                    if(item.id === product.id)
+                    return {
+                        ...item,
+                        qty: item.qty + qty,
+                    }
+                    else return item
+                }) 
+                setItem(actualizarProductos)
         }
-    },[item, ItemsCart])
+    }
+
+    const itemsEnCarrito = item.reduce((act,val) => act + val.qty,0)
+
+    const removeItem = id => {
+        const itemFiltered = item.filter(item => item.id =! id)
+        setItem(itemFiltered)
+    }
+
+    const clear = () =>setItem([])
+
     return(
-        <CartContext.Provider value={ {addItem,itemsEnCarrito} }>
+        <CartContext.Provider value={ {addItem,itemsEnCarrito, removeItem, clear} }>
             {children}
         </CartContext.Provider>
     )
