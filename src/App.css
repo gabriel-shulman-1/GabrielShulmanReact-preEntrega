@@ -199,6 +199,22 @@ span{
   align-items: center;
 }
 
+.details{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border-style: solid;
+  border-color: rgb(255, 0, 255);
+}
+
+.textDetail{
+  margin-bottom: 0;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
