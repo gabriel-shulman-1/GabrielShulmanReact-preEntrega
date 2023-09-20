@@ -1,5 +1,7 @@
-import { createContext, useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { CartContext } from "../context/CartContext";
+import { Link } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export function Cart (){
     
@@ -18,7 +20,12 @@ export function Cart (){
             )
 
     return(
-        <div> {itemsEnCarrito===0 ? <p>no hay nada</p>:<p>hay algo</p>}
+        <div className="containerResumen"> {itemsEnCarrito===0 ? 
+        <Link to={"/"}>
+        <h2 id="noHay">No hay nada en el carrito. Hace click para volver!</h2>
+        </Link>
+        :
+        <>
             <div className="details">
                 <p className="textDetail">Producto</p>
                 <p className="textDetail">Cantidad</p>
@@ -33,13 +40,21 @@ export function Cart (){
                         <p className="textDetail">{item.qty}</p>
                         <p className="textDetail">{item.price}</p>
                         <p className="textDetail">{item.price * item.qty}</p>
-                        <button onClick={()=>removeItem(item.id)}>Eliminar</button>
+                        <button onClick={()=>removeItem(item.id)} className="btn btn-primary">Eliminar</button>
                     </div>
                 ))}
             </div>
             <div className="details">
                 <h3>Total: {total()} U$</h3>
             </div>
+            <div className="personalData">
+                <h4>Ingresa tus datos para realizar la compra</h4>
+                    <input type="text" className="personalDataInput" placeholder="Ingresa tu nombre"/>
+                    <input type="number" className="personalDataInput" placeholder="Ingresa tu Numero de telefono" />
+                    <input type="email" className="personalDataInput" placeholder="Ingresa tu correo electronico"/>
+                    <button className="btn btn-primary">Finalizar compra</button>
+            </div>
+            </>}
         </div>
     )
 }

@@ -197,6 +197,7 @@ span{
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
+  
 }
 
 .details{
@@ -217,6 +218,52 @@ span{
 
 .details h3{
   color: white;
+}
+
+.containerResumen{
+  padding: 1rem;
+  
+}
+
+.containerResumen a{
+  text-decoration: none;
+}
+
+#noHay{
+  margin-top: 4rem;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-style: normal;
+}
+
+header a{
+  text-decoration: none;
+}
+
+.personalData{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: solid;
+  border-radius: 1rem;
+  padding: 1rem;
+  border-color: rgb(255, 0, 255);
+  margin: 2rem;
+}
+
+.personalData h4{
+  color: white;
+  margin: 1rem;
+}
+
+.personalData .btn{
+  margin: 1rem;
+}
+
+.personalDataInput{
+  margin: 1rem;
+  width: 20rem;
 }
 
 @keyframes App-logo-spin {
