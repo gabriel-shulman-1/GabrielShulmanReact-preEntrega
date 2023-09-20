@@ -19,6 +19,10 @@ export function Cart (){
                 (acumulador,actualValue)=>acumulador + (actualValue.qty * actualValue.price),0
             )
 
+        const newRegister = () =>{
+            
+        }
+
     return(
         <div className="containerResumen"> {itemsEnCarrito===0 ? 
         <Link to={"/"}>

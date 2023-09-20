@@ -210,6 +210,7 @@ span{
   border-radius: 1rem;
   border-style: solid;
   border-color: rgb(255, 0, 255);
+  gap: 4rem;
 }
 
 .textDetail{
@@ -264,6 +265,19 @@ header a{
 .personalDataInput{
   margin: 1rem;
   width: 20rem;
+}
+
+.contact{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: gray;
+    height: 8rem;
+}
+
+.contact a{
+  color: black;
 }
 
 @keyframes App-logo-spin {
