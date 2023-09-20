@@ -24,15 +24,15 @@ export function CartProvider ({children}){
 
     const itemsEnCarrito = item.reduce((act,val) => act + val.qty,0)
 
-    const removeItem = id => {
-        const itemFiltered = item.filter(item => item.id =! id)
+    const removeItem = (id) => {
+        const itemFiltered = item.filter((toDelete) => toDelete.id !== id)
         setItem(itemFiltered)
     }
 
     const clear = () =>setItem([])
 
     return(
-        <CartContext.Provider value={ {addItem,itemsEnCarrito, removeItem, clear} }>
+        <CartContext.Provider value={ {addItem,itemsEnCarrito, removeItem, clear, item} }>
             {children}
         </CartContext.Provider>
     )

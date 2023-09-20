@@ -215,6 +215,10 @@ span{
   margin-bottom: 0;
 }
 
+.details h3{
+  color: white;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
