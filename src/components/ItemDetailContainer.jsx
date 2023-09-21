@@ -14,7 +14,7 @@ export function ItemDetailContainer() {
         })
             .finally(() => setLoading(false))
     }, [id])
-    if (loading) return <div>Loading...</div>
+    if (loading) return <div className="loading">Loading...</div>
     return (
         <main>
             {<ItemDetail product={product} />}

@@ -131,9 +131,10 @@ header {
   border-radius: 1rem;
   background-color: rgb(0, 0, 0);
   border-color: rgb(255, 0, 255);
-  margin-top: 3rem;
+  margin-top: 5rem;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 5rem;
 }
 
 .itemContainer {
@@ -289,6 +290,12 @@ footer {
 
 table {
   text-align: center;
+}
+
+.loading{
+  color: white;
+  font-size: x-large;
+  font-weight: bolder;
 }
 
 @keyframes App-logo-spin {

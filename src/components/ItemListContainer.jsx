@@ -20,7 +20,7 @@ export function ItemListContainer(props) {
         )
             .finally(() => setLoading(false))
     }, [id])
-    if (loading) return <div>Loading...</div>
+    if (loading) return <div className="loading">Loading...</div>
     return (
         <main>
             <div id="greeting" className="fw-bold">{props.greeting}</div>
