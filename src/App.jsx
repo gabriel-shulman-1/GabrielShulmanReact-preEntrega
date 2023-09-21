@@ -12,13 +12,13 @@ export default function App() {
     <CartProvider>
       <BrowserRouter>
         <NavBar />
-          <Routes>
-            <Route path='/' element={<ItemListContainer greeting="Hello!" />}/>
-            <Route path='/cart' element={<Cart />} />
-            <Route path='/category/:id' element={<ItemListContainer greeting="Hello!" />}/>
-            <Route path='/item/:id' element={<ItemDetailContainer/>}/>
-          </Routes>
-        <Footer/>
+        <Routes>
+          <Route path='/' element={<ItemListContainer greeting="Hello!" />} />
+          <Route path='/cart' element={<Cart />} />
+          <Route path='/category/:id' element={<ItemListContainer greeting="Hello!" />} />
+          <Route path='/item/:id' element={<ItemDetailContainer />} />
+        </Routes>
+        <Footer />
       </BrowserRouter>
     </CartProvider>
   )
