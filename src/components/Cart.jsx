@@ -16,7 +16,7 @@ export function Cart (){
 
         const total = () => 
             item.reduce(
-                (acumulador,actualValue)=>acumulador + (actualValue.qty * actualValue.price),0
+                (acumulador,actualValue)=>acumulador + (actualValue.quantity * actualValue.price),0
             )
 
         const newRegister = () =>{
@@ -41,9 +41,9 @@ export function Cart (){
                 {item.map(item => (
                     <div key={item.id} className="details">
                         <p className="textDetail">{item.name}</p>
-                        <p className="textDetail">{item.qty}</p>
+                        <p className="textDetail">{item.quantity}</p>
                         <p className="textDetail">{item.price}</p>
-                        <p className="textDetail">{item.price * item.qty}</p>
+                        <p className="textDetail">{item.price * item.quantity}</p>
                         <button onClick={()=>removeItem(item.id)} className="btn btn-primary">Eliminar</button>
                     </div>
                 ))}

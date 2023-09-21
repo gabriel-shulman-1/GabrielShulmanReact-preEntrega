@@ -4,7 +4,6 @@ import carrito from "../components/assets/carrito3.svg";
 import { useEffect, useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from "react-router-dom";
-import { Cart } from "./Cart";
 
 export function CartWidget () {
     const [itemsInCart,SetItemsInCart] = useState()

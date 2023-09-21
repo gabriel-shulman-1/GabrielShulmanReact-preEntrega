@@ -4,10 +4,10 @@ export function Footer () {
 
     return(
         <>
-            <div className='contact'>
+            <footer>
                 <p>Linkedin</p>
                 <p>Mi email: </p>
-            </div>
+            </footer>
         </>
     )
 }

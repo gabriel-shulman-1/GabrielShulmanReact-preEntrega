@@ -1,6 +1,6 @@
 #root{
   background-color: black;
-  height: 100vw;
+  height: 110vw;
 }
 
 main{
@@ -209,7 +209,7 @@ span{
   padding: 1rem;
   border-radius: 1rem;
   border-style: solid;
-  border-color: rgb(255, 0, 255);
+  border-color: rgb(200, 255, 0);
   gap: 4rem;
 }
 
@@ -249,7 +249,7 @@ header a{
   border-style: solid;
   border-radius: 1rem;
   padding: 1rem;
-  border-color: rgb(255, 0, 255);
+  border-color: rgb(200, 255, 0);
   margin: 2rem;
 }
 
@@ -267,13 +267,14 @@ header a{
   width: 20rem;
 }
 
-.contact{
+footer{
   display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: gray;
-    height: 8rem;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: gray;
+  height: 8rem;
+  bottom: 0;
 }
 
 .contact a{

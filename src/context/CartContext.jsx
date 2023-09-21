@@ -5,16 +5,16 @@ export const CartContext = createContext([])
 export function CartProvider ({children}){
     const [item, setItem ] = useState([])
 
-    const addItem = (product,qty) =>{
+    const addItem = (product,quantity) =>{
         const alreadyExists = item.some(item => item.id === product.id)
-        if(!alreadyExists) setItem(prev => [...prev,{...product,qty}])
+        if(!alreadyExists) setItem(prev => [...prev,{...product,quantity}])
         else {
             const actualizarProductos = item.map(
                 item => {
                     if(item.id === product.id)
                     return {
                         ...item,
-                        qty: item.qty + qty,
+                        quantity: item.quantity + quantity,
                     }
                     else return item
                 }) 
@@ -22,7 +22,7 @@ export function CartProvider ({children}){
         }
     }
 
-    const itemsEnCarrito = item.reduce((act,val) => act + val.qty,0)
+    const itemsEnCarrito = item.reduce((act,val) => act + val.quantity,0)
 
     const removeItem = (id) => {
         const itemFiltered = item.filter((toDelete) => toDelete.id !== id)

@@ -17,7 +17,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export  const ItemDetail = ({product}) => {
     const images = [h1,h2,h3,h4,s1,s2,s3,s4,a1,a2,a3,a4]
-    const addItem = useContext(CartContext)
+    const {addItem} = useContext(CartContext)
     const onAdd = count => addItem(product,count)
     
     return(
@@ -26,9 +26,9 @@ export  const ItemDetail = ({product}) => {
             <img className="rounded mx-auto d-block" src={images[product.image]}></img>
             <p>{product.description}</p>
             <p>Categoria : {product.category}</p>
-            <p>Cantidad : {product.qty}</p>
+            <p>Cantidad : {product.quantity}</p>
             <p>Precio : {product.price}U$</p>
-            <ItemCount onAdd={onAdd} stock={product.qty}/>
+            <ItemCount onAdd={onAdd} stock={product.quantity}/>
         </div>
 )}
     
