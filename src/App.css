@@ -5,7 +5,7 @@
 
 #root {
   background-color: black;
-  height: 100vw;
+  height: 120vw;
 }
 
 main {
@@ -268,7 +268,6 @@ header a {
 }
 
 footer {
-  margin-top: 10rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;

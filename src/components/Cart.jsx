@@ -52,7 +52,7 @@ export function Cart() {
             </Link>
             :
             <>
-                <table class="table table-dark">
+                <table className="table table-dark">
                     <thead>
                         <tr>
                             <th scope="col">Producto</th>
