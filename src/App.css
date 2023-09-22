@@ -292,6 +292,14 @@ table {
 }
 
 .loading{
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  margin: 2rem;
+  width: max-content;
+  justify-content: center;
   color: white;
   font-size: x-large;
   font-weight: bolder;
