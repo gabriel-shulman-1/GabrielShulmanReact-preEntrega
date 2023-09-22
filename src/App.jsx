@@ -13,9 +13,9 @@ export default function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route path='/' element={<ItemListContainer greeting="Hello!" />} />
+          <Route path='/' element={<ItemListContainer greeting="Bienvenido! aca tenes la lista de nuestros productos" />} />
           <Route path='/cart' element={<Cart />} />
-          <Route path='/category/:id' element={<ItemListContainer greeting="Hello!" />} />
+          <Route path='/category/:id' element={<ItemListContainer greeting="Estos son nuestros productos seleccionados por categoria" />} />
           <Route path='/item/:id' element={<ItemDetailContainer />} />
         </Routes>
         <Footer />
