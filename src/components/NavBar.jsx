@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export const NavBar = () => {
     return (
         <header>
-            <img src={pc}></img>
+            <img src={pc} alt=""></img>
             <nav className="navBar">
                 <Link className="btn btn-primary" to="/">Home</Link>
                 <Link className="btn btn-primary" to="/category/hardware">Hardware</Link>

@@ -8,15 +8,16 @@ export function CartWidget() {
     const [itemsInCart, SetItemsInCart] = useState()
     const { itemsEnCarrito } = useContext(CartContext)
     useEffect(() => {
-        SetItemsInCart(
-            itemsEnCarrito == 0 ? "No hay items en el carrito" : "hay " + itemsEnCarrito + " item/s en el carrito"
-        )
-    }
-    )
+        if(itemsEnCarrito === 0) {SetItemsInCart("No hay items en el carrito")}
+        else {
+            itemsEnCarrito === 1 ? SetItemsInCart("hay " + itemsEnCarrito + " item en el carrito")
+            :SetItemsInCart("hay " + itemsEnCarrito + " items en el carrito")
+            }
+        },[itemsEnCarrito])
     return (
         <Link to="/cart">
             <div className="inCart">
-                <img src={carrito}></img>
+                <img src={carrito} alt=""></img>
                 <p>{itemsInCart}</p>
             </div>
         </Link>

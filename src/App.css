@@ -5,7 +5,7 @@
 
 #root {
   background-color: black;
-  height: 120vw;
+  height: (60vw-120vw);
 }
 
 main {
@@ -106,7 +106,7 @@ header {
   display: flex;
   padding: 1rem;
   border-style: solid;
-  width: 30%;
+  width: 40%;
   flex-direction: column;
   align-items: center;
   border-radius: 1rem;
@@ -226,7 +226,6 @@ span {
 }
 
 #noHay {
-  margin-top: 4rem;
   color: white;
   text-decoration: none;
   text-align: center;
@@ -296,6 +295,20 @@ table {
   color: white;
   font-size: x-large;
   font-weight: bolder;
+}
+
+.noHayNada{
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: solid;
+  border-radius: 1rem;
+  padding: 3rem;
+  border-color: rgb(255, 0, 0);
+  margin: 2rem;
+  width: max-content;
+  justify-content: center;
 }
 
 @keyframes App-logo-spin {

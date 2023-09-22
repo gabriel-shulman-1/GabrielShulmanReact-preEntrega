@@ -48,7 +48,9 @@ export function Cart() {
     return (
         <div className="containerResumen"> {itemsEnCarrito === 0 ?
             <Link to={"/"}>
-                <h2 id="noHay">No hay nada en el carrito. Hace click para volver!</h2>
+                <div className="noHayNada">
+                    <h2 id="noHay">No hay nada en el carrito. Hace click para volver!</h2>
+                </div>
             </Link>
             :
             <>
