@@ -293,7 +293,7 @@ table {
 }
 
 .loading{
-  height: 20rem;
+  height: 61vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -307,7 +307,7 @@ table {
 }
 
 .noHayNada{
-  height: 20rem;
+  height: 58vh;
   display: flex;
   flex-direction: column;
   align-items: center;

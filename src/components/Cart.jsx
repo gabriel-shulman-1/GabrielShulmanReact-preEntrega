@@ -58,8 +58,8 @@ export function Cart() {
                     <thead>
                         <tr>
                             <th scope="col">Producto</th>
-                            <th scope="col">Cantidad</th>
                             <th scope="col">Importe</th>
+                            <th scope="col">Cantidad</th>
                             <th scope="col">Total</th>
                             <th scope="col">Eliminar</th>
                         </tr>
@@ -68,16 +68,16 @@ export function Cart() {
                         <thead key={item.id}>
                             <tr>
                                 <th>{item.name}</th>
-                                <th>{item.quantity}</th>
-                                <th>{item.price}</th>
-                                <th>{item.price * item.quantity}</th>
+                                <th>{item.price}.00 U$</th>
+                                <th>X {item.quantity}</th>
+                                <th>{item.price * item.quantity}.00 U$</th>
                                 <th><button onClick={() => removeItem(item.id)} className="btn btn-primary">Eliminar</button></th>
                             </tr>
                         </thead>
                     ))}
                 </table>
                 <div className="personalData">
-                    <h3>Total: {total()} U$</h3>
+                    <h3>Total: {total()}.00 U$</h3>
                 </div>
                 <div className="personalData">
                     <h4>Ingresa tus datos para realizar la compra</h4>
