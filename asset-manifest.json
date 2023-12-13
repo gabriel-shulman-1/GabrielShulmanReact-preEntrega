@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/GabrielShulmanReact-preEntrega/static/css/main.3676e550.css",
+    "main.js": "/GabrielShulmanReact-preEntrega/static/js/main.03ad5aef.js",
+    "static/js/787.3d0dd9aa.chunk.js": "/GabrielShulmanReact-preEntrega/static/js/787.3d0dd9aa.chunk.js",
+    "static/media/pc.png": "/GabrielShulmanReact-preEntrega/static/media/pc.2d047a98e2320738d489.png",
+    "static/media/ageOfEmpires2.jpg": "/GabrielShulmanReact-preEntrega/static/media/ageOfEmpires2.b62b68d93fc9bd9dc4f7.jpg",
+    "static/media/motherBoard.jpg": "/GabrielShulmanReact-preEntrega/static/media/motherBoard.cf083a2bab3d7f1a7f8f.jpg",
+    "static/media/carrito3.svg": "/GabrielShulmanReact-preEntrega/static/media/carrito3.bb836ddcef6d25956b950e8153c96392.svg",
+    "index.html": "/GabrielShulmanReact-preEntrega/index.html",
+    "main.3676e550.css.map": "/GabrielShulmanReact-preEntrega/static/css/main.3676e550.css.map",
+    "main.03ad5aef.js.map": "/GabrielShulmanReact-preEntrega/static/js/main.03ad5aef.js.map",
+    "787.3d0dd9aa.chunk.js.map": "/GabrielShulmanReact-preEntrega/static/js/787.3d0dd9aa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3676e550.css",
+    "static/js/main.03ad5aef.js"
+  ]
+}
