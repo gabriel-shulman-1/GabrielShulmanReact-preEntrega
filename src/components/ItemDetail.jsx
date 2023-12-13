@@ -18,7 +18,6 @@ export const ItemDetail = ({ product }) => {
     const images = [h1, h2, h3, h4, s1, s2, s3, s4, a1, a2, a3, a4]
     const { addItem } = useContext(CartContext)
     const onAdd = count => addItem(product, count)
-
     return (
         <div key={product.id} className="productCardForId">
             <h3 className="tituloProducto">{product.name}</h3>
